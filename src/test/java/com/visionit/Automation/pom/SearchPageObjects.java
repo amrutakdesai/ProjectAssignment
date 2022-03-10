@@ -44,19 +44,7 @@ public class SearchPageObjects {
 		logger.info("Result is displayed is :"+displayResult);
 
 	}
-//	public void SearchBoxValidtion()
-//	{
-//		if (driver.findElement(searchBox).isDisplayed())
-//		{
-//			Assert.assertTrue(true);
-//			logger.info("Search Box is displayed is displayed");	           
-//		}
-//		else
-//		{
-//			logger.fatal("Search Box is not displayed is not displayed");
-//			Assert.fail("Search Box is not displayed ");
-//		}
-//	}
+
 
 
 

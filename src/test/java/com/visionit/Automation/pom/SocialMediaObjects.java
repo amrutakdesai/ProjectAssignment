@@ -12,7 +12,7 @@ public class SocialMediaObjects {
 
     private WebDriver driver;
     private By PressBtn=By.xpath("//li[@class='twitter']");
-    private By AccountName=By.xpath("//span[text()='Selenium Framework'][1]");
+    private By AccountName=By.xpath("//body/div[@id='react-root']/div[1]/div[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]/span[contains(text(),'Selenium Framework')]");
    		
     public SocialMediaObjects(WebDriver driver)
     {

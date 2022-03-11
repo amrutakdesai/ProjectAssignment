@@ -118,24 +118,20 @@ public class StepDef {
 	}
 	//SearchProductFuctionality
 	@When("User Search for product {string}")
-	public void user_search_for_product(String Pname) {
+	@When("User Search for product {string}")
+	public void user_search_for_product(String Pname) throws InterruptedException {
 
 		searchPageObjects.SearchBoxFunctionality(Pname);
 		scn.log("Entered "+Pname+" in Search Box");
-
-		searchPageObjects.ClickOnSearchButton();
-		scn.log("Clicked on Search Button");
-		scn.log("Product Searched: " + Pname);
 
 
 	}
 	@Then("Test Search Product contains is displyed result {string}")
 	public void test_search_product_contains_is_displyed_result(String Pname) {
 		searchPageObjects.ValidateProductSearchResult(Pname);
-		scn.log("Search Result Validation Successfull:"+Pname);
+		scn.log("Search Result Contains "+Pname+" Validation Successfull:"+Pname);
 
 	}
-
 
 	//Social media Functionality
 

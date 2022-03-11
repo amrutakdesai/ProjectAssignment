@@ -20,7 +20,7 @@ Feature: E-Commerce Home Page
   @Search
   Scenario: Aaplication searching functionality
     When User Search for product "T-shirt"
-    Then Test Search Product contains is displyed result '"T-SHIRT"'
+    Then Test Search Product contains is displyed result "T-shirt"
 
   @SocialMedia
   Scenario: Application social media handles validation
